@@ -1,0 +1,14 @@
+FROM python:3.11-slim
+
+RUN useradd -m -u 1000 runner
+
+WORKDIR /workspace
+
+COPY backend/grader.py backend/
+COPY backend/database.py backend/
+COPY backend/config.py backend/
+COPY backend/models.py backend/
+
+RUN pip install --no-cache-dir pydantic-settings sqlalchemy
+
+USER runner:runner

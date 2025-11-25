@@ -1,0 +1,74 @@
+{
+  "tasks": [
+    {
+      "id": "sum_two_numbers",
+      "title": "Сумма двух чисел",
+      "description": "Напишите функцию sum_two_numbers(a, b), которая возвращает их сумму.",
+      "difficulty": "easy",
+      "time_limit": 2,
+      "template": "def sum_two_numbers(a, b):\n    # Ваш код здесь\n    pass",
+      "spec": {
+        "language": "python",
+        "entry": { "type": "function", "name": "sum_two_numbers", "params": ["a", "b"] },
+        "tests": [
+          { "args": [1, 2], "kwargs": {}, "expected": 3 },
+          { "args": [10, -2], "kwargs": {}, "expected": 8 },
+          { "args": [0, 0], "kwargs": {}, "expected": 0 }
+        ]
+      }
+    },
+    {
+      "id": "calculator_divide",
+      "title": "Деление в Калькуляторе",
+      "description": "Реализуйте метод divide в классе Calculator.",
+      "difficulty": "medium",
+      "time_limit": 2,
+      "template": "class Calculator:\n    def divide(self, a, b):\n        # Ваш код здесь\n        pass",
+      "spec": {
+        "language": "python",
+        "entry": {
+          "type": "class_method",
+          "class_name": "Calculator",
+          "method_name": "divide",
+          "params": ["a", "b"]
+        },
+        "tests": [
+          { "args": [10, 2], "kwargs": {}, "expected": 5 },
+          { "args": [9, 3], "kwargs": {}, "expected": 3 }
+        ]
+      }
+    },
+    {
+      "id": "user_profile_full",
+      "title": "Профиль пользователя",
+      "description": "Реализуйте класс UserProfile с атрибутом full_name и методом greet.",
+      "difficulty": "hard",
+      "time_limit": 3,
+      "template": "class UserProfile:\n    def __init__(self, first_name, last_name):\n        # Ваш код здесь\n        pass\n\n    def greet(self):\n        # Ваш код здесь\n        pass",
+      "spec": {
+        "language": "python",
+        "entry": [
+          {
+            "type": "class_attribute",
+            "class_name": "UserProfile",
+            "attribute_name": "full_name",
+            "constructor_params": ["first_name", "last_name"],
+            "tests": [
+              { "constructor_args": ["Ada", "Lovelace"], "expected": "Ada Lovelace" }
+            ]
+          },
+          {
+            "type": "class_method",
+            "class_name": "UserProfile",
+            "method_name": "greet",
+            "params": [],
+            "constructor_args": ["Grace", "Hopper"],
+            "tests": [
+              { "args": [], "kwargs": {}, "expected": "Hello, Grace Hopper!" }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
