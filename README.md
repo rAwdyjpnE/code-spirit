@@ -94,4 +94,4 @@ npm run dev
 
 ---
 
-*Developed with ❤️.*
+*Developed with @JasonVUrhyz❤️.*
